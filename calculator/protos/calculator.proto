@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package calculator;
+
+service Calculator {
+    rpc SquareRoot(Number) returns (Number);
+}
+
+message Number {
+    int32 value = 1;
+}
